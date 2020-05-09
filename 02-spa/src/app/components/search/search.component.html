@@ -1,5 +1,13 @@
 <h1 class="m-5">Searching <small>{{ textSearched }}</small></h1>
 
+<div class="row animated fadeIn fast" *ngIf="heros.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            There's not results of {{ textSearched }}
+        </div>
+    </div>
+</div>
+
 <div class="card-columns">
 
     <div class="card animated fadeIn fast" *ngFor="let hero of heros; let i = index">
