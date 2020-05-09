@@ -15,5 +15,4 @@ export class HerosComponent implements OnInit {
 
     this.heros = this._herosService.getHeros();
   }
-
 }
