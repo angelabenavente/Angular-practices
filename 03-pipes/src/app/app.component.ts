@@ -28,4 +28,6 @@ export class AppComponent {
     }, 4500);
   });
 
+  fecha: Date = new Date();
+
 }
