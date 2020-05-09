@@ -12,6 +12,7 @@ export class AppComponent {
   PI: number = Math.PI;
   porcentaje: number = 0.234;
   salario: number = 1234.5;
+  videoURL : string = 'https://www.youtube.com/embed/sgFQjRL5niY';
 
   heroe = {
     nombre: 'Logan',

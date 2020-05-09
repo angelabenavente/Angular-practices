@@ -144,6 +144,12 @@
                     <td> pipe personalizado: capitalizado:true </td>
                     <td> {{ nombre2 | capitalizado:false }} </td>
                 </tr>
+                <tr>
+                    <td>Un iframe</td>
+                    <td> pipe personalizado: domseguro </td>
+                    <td> <iframe width="560" height="315" [src]="videoURL | domseguro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+                </tr>
+
             </tbody>
         </table>
     </div>
