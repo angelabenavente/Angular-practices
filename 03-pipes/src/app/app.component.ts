@@ -20,5 +20,12 @@ export class AppComponent {
       calle: 'Primera',
       casa: 20
     }
-  }
+  };
+
+  valorPromesa = new Promise<string>( (resolve) => {
+    setTimeout(() => {
+      resolve('promesa cumplida pasados 4s');
+    }, 4500);
+  });
+
 }
