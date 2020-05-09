@@ -17,7 +17,6 @@ export class CapitalizadoPipe implements PipeTransform {
       
     } else {
       nombres[0] = nombres[0][0].toUpperCase() + nombres[0].substring(1);
-      return 'hola mundo';
     }
     return nombres.join(' ');
   }
