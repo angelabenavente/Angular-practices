@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { CssScopeComponent } from './components/cssScope/cssScope.component';
+import { ClassComponent } from './components/class/class.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgStyleComponent,
-    CssScopeComponent
+    CssScopeComponent,
+    ClassComponent
 
   ],
   imports: [
