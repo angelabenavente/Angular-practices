@@ -15,3 +15,14 @@
 <button (click)="properties.success = !properties.success" type="button" name="button" [ngClass]="{ 'alert-danger': !properties.success, 'alert-success': properties.success }">
 Change alert
 </button>
+
+<br>
+
+<h3>Async</h3>
+
+<button (click)="run()" type="button" name="button" [disabled]="loading">
+  <i [ngClass]="{ 'fa-save':!loading, 'fa-refresh fa-spin':loading }"
+  class="fa"></i>
+  <span *ngIf="!loading"> Save changes</span>
+  <span *ngIf="loading"> Saving...</span>
+</button>

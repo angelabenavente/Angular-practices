@@ -26,13 +26,17 @@ export class ClassComponent implements OnInit {
     success: true
   };
 
-  toggleButton() {
-    this.properties = !this.properties;
-  }
+  loading:boolean = false;
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  run(){
+    this.loading = true;
+
+    setTimeout( () => this.loading = false, 3000 );
+  }
 }
